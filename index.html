@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp - Обсуждения</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Добавляем стили для отзывов */
+        .reviews {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        
+        .review {
+            width: 22%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .review:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .review:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .review:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .review h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .review p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Добавляем стили для рамки "Нас рекомендуют" */
+        .recommendation {
+            margin: 50px auto;
+            padding: 30px;
+            text-align: center;
+            border: 3px solid #4CAF50;
+            border-radius: 15px;
+            width: 80%;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .recommendation img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .recommendation h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyApp</div>
+        <nav>
+            <ul>
+                <li><a href="#">Особенности</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Свяжите вашу команду</h1>
+            <p>Работайте более эффективно с MyApp.</p>
+            <button>Начать бесплатно</button>
+        </section>
+        <section class="features">
+            <h2>Особенности</h2>
+            <div class="feature">
+                <img src="https://i.gifer.com/origin/7b/7b697f4981b2602c360176a808415c04_w200.gif" alt="Чат" />
+                <h3>Чат</h3>
+                <p>Общайтесь в реальном времени с коллегами.</p>
+            </div>
+            <div class="feature">
+                <img src="https://media.tenor.com/lYZYAEIAbecAAAAM/hasbulla.gif" alt="Интеграции" />
+                <h3>Интеграции</h3>
+                <p>Подключайте любимые приложения для удобства.</p>
+            </div>
+            <div class="feature">
+                <img src="https://media.tenor.com/i7FjmUFVfgEAAAAM/%D1%85%D0%B0%D1%81%D0%B1%D0%B8%D0%BA.gif" alt="Безопасность" />
+                <h3>Безопасность</h3>
+                <p>Ваши данные защищены на высшем уровне.</p>
+            </div>
+        </section>
+
+        
+        <section class="reviews">
+            <div class="review">
+                <h3>даша</h3>
+                <p>MyApp помог руслану подстричься</p>
+            </div>
+            <div class="review">
+                <h3>снежана</h3>
+                <p>С MyApp мы экономим много времени на организацию и поддерживаем связь между сотрудниками.</p>
+            </div>
+            <div class="review">
+                <h3>арсик супер гау не ставьте ему пять пжпжпж</h3>
+                <p>Безопасность данных для нас крайне важна, и MyApp полностью оправдывает ожидания.</p>
+            </div>
+            <div class="review">
+                <h3>Я</h3>
+                <p>Мы оценили простоту интеграции MyApp с другими нашими системами. Это невероятно удобно!</p>
+            </div>
+        </section>
+
+        
+        <section class="recommendation">
+            <img src="https://s.ura.news/1200_900/images/news/upload/news/471/639/1052471639/8690c42db23eb5b27bfc4730546557d4_250x0_750.538.0.353.jpg" alt="Рекомендуют" />
+            <h2>Ахмат сила Ахмат на кондициях и нас рекомендует</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyApp. Все права защищены компанией кузет и асхабом тамаевым</p>
+    </footer>
+</body>
+</html>
